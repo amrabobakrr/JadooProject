@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #212832;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #212832;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  align-items: center;
+  color: #212832;
+}
+.arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}
+.login-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-btn {
+  width: 95px;
+  height: 40px;
+  background: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #212832;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: white;
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-badge {
+  color: #df6951;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.hero-title {
+  font-family: "Volkhov", serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 89px;
+  margin-bottom: 1rem;
+  color: #181e4b;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #5e6282;
+  margin-bottom: 2rem;
+  line-height: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.find-more-btn {
+  font-family: "Work Sans", sans-serif;
+  background: #f1a501;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.play-demo {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #686d77;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.play-demo::before {
+  content: "▶";
+  width: 25px;
+  height: 25px;
+  background: #df6951;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 70%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.hero-image {
+  position: relative;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 115%;
+  height: auto;
+  border-radius: 30px;
+}
+.hero-bg-shape {
+  position: absolute;
+  top: -120px;
+  left: 190px;
+  width: 150%;
+  z-index: 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero-main-img {
+  position: relative;
+  max-width: 108%;
+  height: auto;
+  border-radius: 20px;
+}
+.services {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.services-header {
+  margin-bottom: 3rem;
+}
+
+.services-badge {
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+  font-weight: 700;
+}
+
+.services-title {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #14183e;
+  padding: 15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.service-card h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e1d4c;
+}
+
+.service-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e6282;
+  line-height: 26px;
+}
+
+/* Top Destinations */
+.destinations {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.destinations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.destinations-header {
+  margin-bottom: 2rem;
+}
+
+.destinations-badge {
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.destinations-title {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #14183e;
+  margin-bottom: 2rem;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.destination-info {
+  padding: 1.5rem;
+}
+
+.destination-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: #5e6282;
+  size: 18px;
+}
+
+.destination-duration {
+  color: #5e6282;
+  font-size: 16px;
+}
+
+/* Booking Steps */
+.booking-steps {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.booking-content h3 {
+  font-family: "Poppins";
+  color: #5e6282;
+  font-weight: 600;
+}
+
+.booking-title {
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-weight: 700;
+  color: #14183e;
+}
+
+.booking-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-step {
+  font-family: "Poppins";
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.step-content h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.step-content p {
+  color: #5e6282;
+  font-size: 0.9rem;
+}
+
+.booking-image {
+  text-align: center;
+  max-width: 100%;
+  transform: translateX(120px);
+}
+
+.booking-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* companies-section */
+.companies-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.company-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: #dfd7f9;
+  padding: 50px 0;
+  position: relative;
+  border-radius: 129px 20px 20px 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.newsletter-content {
+  text-align: center;
+  max-width: 859px;
+  margin: 0 auto;
+}
+
+.newsletter-section h3 {
+  font-family: "poppins";
+  font-size: 33px;
+  color: #5e6282;
+  margin-bottom: 74px;
+  line-height: 54px;
+  font-weight: 600;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 21px 50px 21px 21px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+  color: #39425d;
+}
+
+.newsletter-input::placeholder {
+  color: #c4c4c4;
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px 26px;
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.newsletter-btn:hover {
+  background: linear-gradient(180deg, #ff7d68 0%, #ff6b5b 100%);
+}
+/* Footer */
+footer {
+  background: #ffffff;
+  padding: 60px 0 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-grid {
+  color: #181e4b;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0%;
+}
+
+.footer-brand h3 {
+  font-family: "Poppins";
+  font-size: 44px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.footer-brand p {
+  color: #5e6282;
+  line-height: 125%;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #5e6282;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f97316;
+}
+
+.social-banner img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.social-banner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.app-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #5e6282;
+  text-align: center;
+  margin: -1rem 0 0.8rem;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.app-section {
+  text-align: center;
+}
+
+.google-play img,
+.app-store img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.footer-bottom {
+  padding-top: 1rem;
+  text-align: center;
+  color: #5e6282;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-bg-shape {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}
